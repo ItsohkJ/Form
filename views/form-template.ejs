@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - B.Ed</title>
+    <style>
+       .container { font-family: Arial, sans-serif; margin: 20px; line-height: 0.9; font-size: 11px;}
+        .header { text-align: center; margin-bottom: 5px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { font-weight: bold; margin-right: 10px; }
+        .photo { width: 100px; height: 140px; border-radius: 5px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; }
+        .margin { margin-top: 20px; }
+        .value { text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Shaheed Bhagat Singh College of Education</h3>
+            <h4>Odhan Road Kalanwali</h4>
+            <h4>Application Form - B.Ed</h4>
+        </div>
+        <img src="<%= photo %>" alt="User Photo" class="photo">
+
+        <div class="form-group">
+            <label>Candidate's Name:</label>
+            <span class="value"><%= name %></span>
+        </div>
+        <div class="form-group">
+            <label>Father's Name:</label>
+            <span class="value"><%= fname %></span>
+        </div>
+        <div class="form-group">
+            <label>Mother's Name:</label>
+            <span class="value"><%= mname %></span>
+        </div>
+        <div class="form-group">
+            <label>Date Of Birth:</label>
+            <span class="value"><%= dob %></span>
+        </div>
+        <div class="form-group">
+            <label>Sex:</label>
+            <span class="value"><%= sex %></span>
+        </div>
+        <div class="form-group">
+            <label>Caste Category:</label>
+            <span class="value"><%= caste %></span>
+        </div>
+        <div class="form-group">
+            <label>Place of Birth:</label>
+            <span class="value"><%= birthPlace %></span>
+        </div>
+        <div class="form-group">
+            <label>Blood Group:</label>
+            <span class="value"><%= bloodGroup %></span>
+        </div>
+        <div class="form-group">
+            <label>Religion:</label>
+            <span class="value"><%= religion %></span>
+        </div>
+        <div class="form-group">
+            <label>Aadhar Card No.:</label>
+            <span class="value"><%= adhar %></span>
+        </div>
+        <div class="form-group">
+            <label>Country:</label>
+            <span class="value"><%= country %></span>
+        </div>
+        <div class="form-group">
+            <label>State:</label>
+            <span class="value"><%= state %></span>
+        </div>
+        <div class="form-group">
+            <label>District:</label>
+            <span class="value"><%= district %></span>
+        </div>
+        <div class="form-group">
+            <label>Tehsil:</label>
+            <span class="value"><%= tehsil %></span>
+        </div>
+        <div class="form-group">
+            <label>City/Village/Town:</label>
+            <span class="value"><%= city %></span>
+        </div>
+        <div class="form-group">
+            <label>Pin Code:</label>
+            <span class="value"><%= pincode %></span>
+        </div>
+        
+
+        <div class="form-group">
+            <label>Address:</label>
+            <span class="value"><%= address %></span>
+        </div>
+        <div class="form-group">
+            <label>Mobile No.:</label>
+            <span class="value"><%= mob %></span>
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <span class="value"><%= email %></span>
+        </div>
+        <div class="form-group">
+            <label>Domicile:</label>
+            <span class="value"><%= domicile %></span>
+        </div>
+        <div class="form-group">
+            <label>Employment:</label>
+            <span class="value"><%= employment %></span>
+        </div>
+        <div class="form-group">
+            <label>Annual Income:</label>
+            <span class="value"><%= annualIncome %></span>
+        </div>
+        <div class="form-group">
+            <label>Occupation:</label>
+            <span class="value"><%= occupation %></span>
+        </div>
+        <div class="margin section-header"><u>Educational Details</u></div>
+        <div class="section-header">10th</div>
+        <div class="form-group">
+            <label>Name of Board:</label>
+            <span class="value"><%= board_name_10 %></span>
+        </div>
+        <div class="form-group">
+            <label>State:</label>
+            <span class="value"><%= state_10 %></span>
+        </div>
+        <div class="form-group">
+            <label>Name of School:</label>
+            <span class="value"><%= school_name_10 %></span>
+        </div>
+        <div class="form-group">
+            <label>Date of Passing:</label>
+            <span class="value"><%= passing_date_10 %></span>
+        </div>
+        <div class="form-group">
+            <label>Roll No.:</label>
+            <span class="value"><%= roll_no_10 %></span>
+        </div>
+        <div class="form-group">
+            <label>Registration No.:</label>
+            <span class="value"><%= registration_no_10 %></span>
+        </div>
+        <div class="form-group">
+            <label>DMC/Certificate No.:</label>
+            <span class="value"><%= dmc_no_10 %></span>
+        </div>
+        <div class="form-group">
+            <label>Total Marks Obtained:</label>
+            <span class="value"><%= marks_obtained_10 %> out of <%= marks_out_of_10 %></span>
+        </div>
+        <div class="form-group">
+            <label>Percentage of Marks:</label>
+            <span class="value"><%= percentage_marks_10 %></span>
+        </div>
+
+        <div class="margin"></div>
+
+        <div class="section-header">12th</div>
+        <div class="form-group">
+            <label>Name of Board:</label>
+            <span class="value"><%= board_name_12 %></span>
+        </div>
+        <div class="form-group">
+            <label>State:</label>
+            <span class="value"><%= state_12 %></span>
+        </div>
+        <div class="form-group">
+            <label>Name of School:</label>
+            <span class="value"><%= school_name_12 %></span>
+        </div>
+        <div class="form-group">
+            <label>Date of Passing:</label>
+            <span class="value"><%= passing_date_12 %></span>
+        </div>
+        <div class="form-group">
+            <label>Roll No.:</label>
+            <span class="value"><%= roll_no_12 %></span>
+        </div>
+        <div class="form-group">
+            <label>Registration No.:</label>
+            <span class="value"><%= registration_no_12 %></span>
+        </div>
+        <div class="form-group">
+            <label>DMC/Certificate No.:</label>
+            <span class="value"><%= dmc_no_12 %></span>
+        </div>
+        <div class="form-group">
+            <label>Total Marks Obtained:</label>
+            <span class="value"><%= marks_obtained_12 %> out of <%= marks_out_of_12 %></span>
+        </div>
+        <div class="form-group">
+            <label>Percentage of Marks:</label>
+            <span class="value"><%= percentage_marks_12 %></span>
+        </div>
+
+        <div class="section-header">Graduation</div>
+        <div class="form-group">
+            <label>Name of University:</label>
+            <span class="value"><%= university_name %></span>
+        </div>
+        <div class="form-group">
+            <label>State:</label>
+            <span class="value"><%= state %></span>
+        </div>
+        <div class="form-group">
+            <label>Name of College/Institute:</label>
+            <span class="value"><%= college_name %></span>
+        </div>
+        <div class="form-group">
+            <label>Date of Passing:</label>
+            <span class="value"><%= passing_date %></span>
+        </div>
+        <div class="form-group">
+            <label>Roll No.:</label>
+            <span class="value"><%= roll_no %></span>
+        </div>
+        <div class="form-group">
+            <label>Registration No.:</label>
+            <span class="value"><%= registration_no %></span>
+        </div>
+        <div class="form-group">
+            <label>DMC/Certificate No.:</label>
+            <span class="value"><%= dmc_no %></span>
+        </div>
+        <div class="form-group">
+            <label>Total Marks Obtained:</label>
+            <span class="value"><%= marks_obtained %> out of <%= marks_out_of %></span>
+        </div>
+        <div class="form-group">
+            <label>Percentage of Marks:</label>
+            <span class="value"><%= percentage_marks %></span>
+        </div>
+
+
+        
+
+        <div class="form-group">
+            <label>Pursued Post-Graduation:</label>
+            <span class="value"><%= pursued_pg %></span>
+        </div>
+        
+        <% if (pursued_pg === 'yes') { %>
+            <div class="section-header">Post-Graduation</div>
+            <div class="form-group">
+                <label>Name of University:</label>
+                <span class="value"><%= university_name_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>State:</label>
+                <span class="value"><%= state_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>Name of College/Institute:</label>
+                <span class="value"><%= college_name_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>Name of Degree:</label>
+                <span class="value"><%= degree_name_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>Date of Passing:</label>
+                <span class="value"><%= passing_date_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>Roll No.:</label>
+                <span class="value"><%= roll_no_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>Registration No.:</label>
+                <span class="value"><%= registration_no_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>DMC/Certificate No.:</label>
+                <span class="value"><%= dmc_no_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>Total Marks Obtained:</label>
+                <span class="value"><%= marks_obtained_pg %> out of <%= marks_out_of_pg %></span>
+            </div>
+            <div class="form-group">
+                <label>Percentage of Marks:</label>
+                <span class="value"><%= percentage_marks_pg %></span>
+            </div>
+        <% } %>
+        
+
+        <div class="margin section-header">Choice of Medium & Subjects</div>
+        <div class="form-group">
+            <label>Medium:</label>
+            <span class="value"><%= medium %></span>
+        </div>
+        
+        <div class="form-group">
+            <label>Teaching Subjects:</label>
+            <span class="value"><%= sub1 %> <b> and </b> <%= sub2 %></span>
+        </div>
+        
+
+
+
+
+    </div>
+</body>
+</html>

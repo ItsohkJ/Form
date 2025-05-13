@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - B.Ed</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Shaheed Bhagat Singh College of Education <br> Odhan Road Kalanwali <br> Application Form <br> B.Ed</h1>
+            <img src="./images/sbs-logo.jpeg" alt="College Logo" class="logo" width="200" height="200">
+        </div>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            
+            <div class="form-group">
+                <label for="name">Candidate's Name:</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="fname">Father's Name:</label>
+                <input type="text" name="fname"  required>
+            </div>
+            <div class="form-group">
+                <label for="mname">Mother's Name:</label>
+                <input type="text" name="mname" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" name="dob" required>
+            </div>
+            <div class="radio">
+                <label for="sex">Sex:</label>
+                <input type="radio" name="sex" value="male" id="male" required><label for="male">Male</label>
+                <input type="radio" name="sex" value="female" id="female" required><label for="female">Female</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="caste">Caste Category:</label>
+                <select name="caste" id="caste">
+                    <option value="sc">SC</option>
+                    <option value="bca">BCA</option>
+                    <option value="bcb">BCB</option>
+                    <option value="general">GENERAL</option>
+                    <option value="sbc">SBC</option>
+                    <option value="ebpgcc">EBPGCC</option>
+                </select>
+                                    
+            </div>
+            
+            <div class="form-group">
+                <label for="birthPlace">Place of Birth:</label>
+                <input type="text" name="birthPlace">
+            </div>
+            <div class="form-group">
+                <label for="bloodGroup">Blood Group:</label>
+                <input type="text" name="bloodGroup">
+            </div>
+            <div class="form-group">
+                <label for="religion">Religion:</label>
+                <input type="text" name="religion">
+            </div>
+            <div class="form-group">
+                <label for="adhar">Aadhar Card No.:</label>
+                <input type="text" name="adhar" pattern="[0-9]{12}" title="Please Enter a 12-digit Adhar Number">
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" name="country">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" name="state">
+            </div>
+            <div class="form-group">
+                <label for="district">District:</label>
+                <input type="text" name="district">
+            </div>
+            <div class="form-group">
+                <label for="tehsil">Tehsil:</label>
+                <input type="text" name="tehsil">
+            </div>
+            <div class="form-group">
+                <label for="city">City/Village/Town:</label>
+                <input type="text" name="city">
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pin Code:</label>
+                <input type="number" name="pincode">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" name="address">
+            </div>
+            <div class="form-group">
+                <label for="mob">Mobile No.:</label>
+                <input type="number" name="mob">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+            </div>
+            
+            <div class="form-group">
+                <label for="domicile">Domicile of State:</label>
+                <input type="text" name="domicile" placeholder="Haryana/other">
+            </div>
+            <div class="radio">
+                <label for="employment">Employment Status:</label>
+                <input type="radio" name="employment" value="Employed" id="Employed"><label for="Employed">Employed</label>
+                <input type="radio" name="employment" value="Unemployed" id="Unemployed"><label for="Unemployed">Unemployed</label>
+            </div>
+            <div class="form-group">
+                <label for="annualIncome">Annual Income:</label>
+                <input type="number" name="domicile">
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation</label>
+                <input type="text" name="occupation">
+            </div>
+
+
+           
+            <hr>
+            <h3><u>Educational Details</u></h3>
+            <h4 align="center">10<sup>th</sup></h4>
+            <div class="form-group">
+                <label for="board_name_10">Name of Board:</label>
+                <input type="text" id="board_name_10" name="board_name_10">
+            </div>
+
+            <div class="form-group">
+                <label for="state_10">State:</label>
+                <input type="text" id="state_10" name="state_10">
+            </div>
+
+            <div class="form-group">
+                <label for="school_name_10">Name of School:</label>
+                <input type="text" id="school_name_10" name="school_name_10">
+            </div>
+
+            <div class="form-group">
+                <label for="passing_date_10">Date of Passing:</label>
+                <input type="date" id="passing_date_10" name="passing_date_10">
+            </div>
+
+            <div class="form-group">
+                <label for="roll_no_10">Roll no.:</label>
+                <input type="number" id="roll_no_10" name="roll_no_10">
+            </div>
+
+            <div class="form-group">
+                <label for="registration_no_10">Registration no.:</label>
+                <input type="number" id="registration_no_10" name="registration_no_10">
+            </div>
+
+            <div class="form-group">
+                <label for="dmc_no_10">DMC/Certificate No.:</label>
+                <input type="number" id="dmc_no_10" name="dmc_no_10">
+            </div>
+
+            <div class="total-marks">
+                <label for="marks_obtained_10">Total Marks obtained:</label>
+                <div>
+                    <input class="marks-inp" type="number" id="marks_obtained_10" name="marks_obtained_10">
+                    <label for="marks_out_of_10">Out of:</label>
+                    <input class="marks-inp" type="number" id="marks_out_of_10" name="marks_out_of_10">
+                </div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="percentage_marks_10">Percentage of Marks:</label>
+                <input type="text" id="percentage_marks_10" name="percentage_marks_10">
+            </div>
+
+
+            <hr>
+            <h4  align="center">12<sup>th</sup></h4>
+            <div class="form-group">
+                <label for="board_name_12">Name of Board:</label>
+                <input type="text" id="board_name_12" name="board_name_12">
+            </div>
+
+            <div class="form-group">
+                <label for="state_12">State:</label>
+                <input type="text" id="state_12" name="state_12">
+            </div>
+
+            <div class="form-group">
+                <label for="school_name_12">Name of School:</label>
+                <input type="text" id="school_name_12" name="school_name_12">
+            </div>
+
+            <div class="form-group">
+                <label for="passing_date_12">Date of Passing:</label>
+                <input type="date" id="passing_date_12" name="passing_date_12">
+            </div>
+
+            <div class="form-group">
+                <label for="roll_no_12">Roll no.:</label>
+                <input type="number" id="roll_no_12" name="roll_no_12">
+            </div>
+
+            <div class="form-group">
+                <label for="registration_no_12">Registration no.:</label>
+                <input type="number" id="registration_no_12" name="registration_no_12">
+            </div>
+
+            <div class="form-group">
+                <label for="dmc_no_12">DMC/Certificate No.:</label>
+                <input type="number" id="dmc_no_12" name="dmc_no_12">
+            </div>
+
+            <div class="total-marks">
+                <label for="marks_obtained_12">Total Marks obtained:</label>
+                <div>
+                    <input class="marks-inp" type="number" id="marks_obtained_12" name="marks_obtained_12">
+                    <label for="marks_out_of_12"> Out of </label>
+                    <input class="marks-inp" type="number" id="marks_out_of_12" name="marks_out_of_12">
+                </div>       
+            </div>
+            
+        
+
+
+            <div class="form-group">
+                <label for="percentage_marks_12">Percentage of Marks:</label>
+                <input type="text" id="percentage_marks_12" name="percentage_marks_12">
+            </div>
+
+
+          
+            <hr>
+            <h4  align="center">Graduation</h4>
+
+            <div class="form-group">
+                <label for="university_name">Name of University:</label>
+                <input type="text" id="university_name" name="university_name">
+            </div>
+            
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state">
+            </div>
+            
+            <div class="form-group">
+                <label for="college_name">Name of College/Institute:</label>
+                <input type="text" id="college_name" name="college_name">
+            </div>
+            
+            <div class="form-group">
+                <label for="degree_level">Level of Degree:</label>
+                <input type="text" id="degree_level" name="degree_level">
+            </div>
+            
+            <div class="form-group">
+                <label for="degree_name">Name of Degree:</label>
+                <input type="text" id="degree_name" name="degree_name">
+            </div>
+            
+            <div class="form-group">
+                <label for="passing_date">Date of Passing:</label>
+                <input type="date" id="passing_date" name="passing_date">
+            </div>
+            
+            <div class="form-group">
+                <label for="roll_no">Roll no.:</label>
+                <input type="number" id="roll_no" name="roll_no">
+            </div>
+            
+            <div class="form-group">
+                <label for="registration_no">Registration no.:</label>
+                <input type="number" id="registration_no" name="registration_no">
+            </div>
+            
+            <div class="form-group">
+                <label for="dmc_no">DMC/Certificate No.:</label>
+                <input type="number" id="dmc_no" name="dmc_no">
+            </div>
+            
+            <div class="total-marks">
+                <label for="marks_obtained">Total Marks obtained:</label>
+                <div>
+                    <input class="marks-inp" type="number" id="marks_obtained" name="marks_obtained">
+                    <label for="out-of">Out of</label>
+                    <input class="marks-inp" type="number" id="marks_out_of" name="marks_out_of">
+    
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="percentage_marks">Percentage of Marks:</label>
+                <input type="text" id="percentage_marks" name="percentage_marks">
+            </div>
+
+
+
+
+            <hr>
+            
+            <div class="radio">
+                <label>Have you pursued Post-Graduation?</label>
+                <input type="radio" id="pg_yes" name="pursued_pg" value="yes">
+                <label for="pg_yes">Yes</label>
+                <input type="radio" id="pg_no" name="pursued_pg" value="no">
+                <label for="pg_no">No</label>
+            </div>
+            
+            <div id="postGradSection" style="display: none;">
+                <h4  align="center">Post-Graduation</h4>
+            
+                <div class="form-group">
+                    <label for="university_name_pg">Name of University:</label>
+                    <input type="text" id="university_name_pg" name="university_name_pg">
+                </div>
+            
+                <div class="form-group">
+                    <label for="state_pg">State:</label>
+                    <input type="text" id="state_pg" name="state_pg">
+                </div>
+            
+                <div class="form-group">
+                    <label for="college_name_pg">Name of College/Institute:</label>
+                    <input type="text" id="college_name_pg" name="college_name_pg">
+                </div>
+            
+                <div class="form-group">
+                    <label for="degree_name_pg">Name of Degree:</label>
+                    <input type="text" id="degree_name_pg" name="degree_name_pg">
+                </div>
+            
+                <div class="form-group">
+                    <label for="passing_date_pg">Date of Passing:</label>
+                    <input type="date" id="passing_date_pg" name="passing_date_pg">
+                </div>
+            
+                <div class="form-group">
+                    <label for="roll_no_pg">Roll no.:</label>
+                    <input type="number" id="roll_no_pg" name="roll_no_pg">
+                </div>
+            
+                <div class="form-group">
+                    <label for="registration_no_pg">Registration no.:</label>
+                    <input type="number" id="registration_no_pg" name="registration_no_pg">
+                </div>
+            
+                <div class="form-group">
+                    <label for="dmc_no_pg">DMC/Certificate No.:</label>
+                    <input type="number" id="dmc_no_pg" name="dmc_no_pg">
+                </div>
+            
+                <div class="total-marks">
+                    <label for="marks_obtained_pg">Total Marks obtained:</label>
+                    <div>
+                        <input class="marks-inp" type="number" id="marks_obtained_pg" name="marks_obtained_pg">
+                        <label for="marks_out_of_pg">Out of</label>
+                        <input class="marks-inp" type="number" id="marks_out_of_pg" name="marks_out_of_pg">
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="percentage_marks_pg">Percentage of Marks:</label>
+                    <input type="text" id="percentage_marks_pg" name="percentage_marks_pg">
+                </div>
+            </div>
+            
+
+       
+          
+
+            <hr >
+            <h3>Upload Documents</h3>
+            <div class="form-group files">
+                <label for="image">Upload Your Photo</label>
+                <input class="file"  type="file" name="image" accept="image/*" required >
+            </div>
+            <div class="form-group files">
+                <label for="sign">Upload Your Signature</label>
+                <input class="file"  type="file" name="sign" accept="image/*" required >
+            </div>
+
+            <div class="form-group files">
+                <label for="10th">Upload 10th Certificate</label>
+                <input type="file" class="file" name="10th" accept="image/*">
+            </div>
+            <div class="form-group files">
+                <label for="12th">Upload 12th Certificate</label>
+                <input type="file" class="file" name="12th" accept="image/*">
+            </div>
+            <div class="form-group files">
+                <label for="graduation">Upload Graduation Certificate</label>
+                <input type="file" class="file" name="graduation" accept="image/*">
+            </div>
+            <div class="form-group files" id="casteFile">
+                <label for="category">Upload Category Certificate</label>
+                <input class="file" type="file" name="category" accept="image/*">
+            </div>
+            <div class="form-group files" id="incomeFile">
+                <label for="income">Upload Income Certificate</label>
+                <input class="file" type="file" name="income" accept="image/*">
+            </div>
+            <div class="form-group files">
+                <label for="familyId">Upload Family Id</label>
+                <input type="file" class="file" name="familyId" accept="image/*">
+            </div>
+            <div class="form-group files">
+                <label for="character">Upload Character Certificate</label>
+                <input type="file" class="file" name="character" accept="image/*">
+            </div>
+            <hr>
+            <h3>Choice of Medium & Subjects</h3>
+            <div class="form-group">
+               <label for="medium">Select Medium</label>
+               <select name="medium" id="medium">
+                    <option value="hindi">Hindi</option>
+                    <option value="english">English</option>
+               </select>
+            </div>
+            <div class="radio">
+                <label for="teaching-subject">Teaching Subjects</label>
+                <input class="marks-inp" type="text" name="sub1">
+                <input class="marks-inp" type="text" name="sub2">
+             </div>
+            
+            
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
